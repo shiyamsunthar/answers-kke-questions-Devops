@@ -1,0 +1,25 @@
+#This is a sample yaml file for the KKE Devops task Deploy Tomcat App on Kubernetes.
+#Edit the below file as per your questions.
+#Anything in between <> braket need to be replaced by the details from your questions.
+#Check this blog https://thirigiri.blogspot.com for how to deply this file and complete the task.
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <deployment-name-from-your-question>
+  namespace: <namespace-name-from your-question>
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: <deployment-name-from-your-question>
+  template:
+    metadata:
+      labels:
+        app: <deployment-name-from-your-question>
+    spec:
+      containers:
+        - name: <container-name-from-your-question>
+          image: < image name / URL from your question>
+          ports:
+            - containerPort: <container-port-from-your-question>
