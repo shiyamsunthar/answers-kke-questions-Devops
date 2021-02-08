@@ -1,7 +1,7 @@
 #This is a sample yaml file for the KKE Devops task Deploy Tomcat App on Kubernetes.
 #Edit the below file as per your questions.
-#Anything in between <> brakets needs to be replaced by the details from your questions.
-#Check this blog https://thirigiri.blogspot.com for how to deply this file and complete the task.
+#Anything in between <> brakets need to be replaced by the details from your questions.
+#Check this blog https://thirigiri.blogspot.com for kubenetes commands, how to deply this file and complete the task.
 
 apiVersion: v1
 kind: Service
