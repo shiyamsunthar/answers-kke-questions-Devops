@@ -9,17 +9,17 @@ metadata:
   name: <deployment-name-from-your-question>
   namespace: <namespace-name-from your-question>
 spec:
-  replicas: 2
+  replicas: <find from your questions>
   selector:
     matchLabels:
-      app: <deployment-name-from-your-question>
+      app: <name-from-your-question>
   template:
     metadata:
       labels:
-        app: <deployment-name-from-your-question>
+        app: <name-from-your-question>
     spec:
       containers:
         - name: <container-name-from-your-question>
-          image: < image name / URL from your question>
+          image: <image name / URL from your question>
           ports:
             - containerPort: <container-port-from-your-question>
