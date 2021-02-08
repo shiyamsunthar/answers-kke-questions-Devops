@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <deployment-name-from-question>
+spec:
+  replicas: <from-question>
+  selector:
+    matchLabels:
+      app: <from-question>
+      tier: back-end
+  template:
+    metadata:
+      labels:
+        app: <from-question>
+        tier: back-end
+    spec:
+      containers:
+        - name: <container-name-from-question> 
+          image: <image name/URL from question>
+          resources:
+            requests:
+              cpu: "<from-question>"
+              memory: "<from-question>"  
+          ports:
+            - containerPort: <conainer-port-from-question>
