@@ -1,0 +1,18 @@
+#This is a sample yaml file for the KKE Devops task deploy-GB-app
+#Edit the below lines as per your question.
+#Anything in between <> braket need to be replaced by the details from your questions.
+#Check this blog https://thirigiri.blogspot.com for kubenetes commands, how to deply this file and complete the task.
+
+apiVersion: v1
+kind: service
+metadata:
+  name: <from-question> 
+spec:
+  type: <from-question> 
+  selector:
+    app: <from-question> 
+    tier: front-end
+  ports:
+    - port: <from-question>
+      targetPort: <from-question> 
+      nodePort: <from-question> 
