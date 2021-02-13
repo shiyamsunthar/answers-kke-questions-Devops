@@ -1,4 +1,4 @@
-#This is a sample .yaml file for the KKE DevOps task deploy the app on the docker container.
+#This is a sample .yml file for the KKE DevOps task deploy the app on the docker container.
 #Edit the below lines as per your question.
 #Anything in between <> braket need to be replaced by the details from your questions.
 #Check this blog https://thirigiri.blogspot.com for kubenetes commands, how to deply this file and complete the task.
