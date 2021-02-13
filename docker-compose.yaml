@@ -1,1 +1,32 @@
 #This is a sample file for the KKE DevOps task deploy the app on the docker container.
+#Edit the below lines as per your question.
+#Anything in between <> braket need to be replaced by the details from your questions.
+#Check this blog https://thirigiri.blogspot.com for kubenetes commands, how to deply this file and complete the task.
+
+
+version : '3'
+services:
+   DB:
+     container_name: <db_container_name>
+     image: <image>:<tag>
+     volumes:
+       - <host_Volume_path>:<container_Volme_path>
+     restart: always
+     ports:
+       - "<host_port>:<container_port>"
+     environment:
+       MYSQL_DATABASE: <check_your_question>
+       MYSQL_USER: <check_your_question>
+       MYSQL_PASSWORD: <check_your_question>
+
+   web:
+     depends_on:
+       - DB
+     container_name: <db_container_name>
+     image: <image>:<tag>
+     ports:
+       - "<host_port>:<container_port>"
+     restart: always
+     volumes:
+      - <host_Volume_path>:<container_Volme_path>
+
