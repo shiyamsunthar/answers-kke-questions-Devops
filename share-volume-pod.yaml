@@ -1,5 +1,6 @@
-
-
+#This is a sample yaml file for the KKE Devops task Kubernetes share volumes.
+#Edit the below codes as per your details from your questions.
+#Check this blog https://thirigiri.blogspot.com for how to deply this file, complete the task and kubenetes commands.
 
 apiVersion: v1
 kind: Pod
