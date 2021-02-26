@@ -19,7 +19,6 @@ spec:
     - name: volume-share
       mountPath: /tmp/beta
     command: ['/bin/bash','-c','sleep 10000']
-	
   - name: volume-container-datacenter-2
     image: centos:latest
     volumeMounts:
