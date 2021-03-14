@@ -12,10 +12,8 @@ Sample answers for KKE Devops tasks
 #Check this blog https://thirigiri.blogspot.com for kubenetes commands, how to deply these file and complete the task.
 
 #please support me by like and subscribe my blog and youtube channel.
+
 https://thirigiri.blogspot.com 
 
 https://www.youtube.com/channel/UCR-Y4S4fIFe4FedFwDDUIag/featured
-
-
-
 
