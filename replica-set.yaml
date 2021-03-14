@@ -1,0 +1,26 @@
+#This is a sample yaml file for the KKE Devops task create replicaset in k8s cluster.
+#Edit the below file as per your question details. < remove these comments>
+#Check this blog https://thirigiri.blogspot.com for kubenetes commands, how to deply this file and complete the task.
+
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: httpd-replicaset
+  labels:
+    app: httpd_app
+    type: front-end
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: httpd_app
+      type: frontend
+  template:
+    metadata:
+      labels:
+        app: httpd_app
+        type: frontend
+    spec:
+      containers:
+      - name: httpd-container
+        image: httpd:latest
