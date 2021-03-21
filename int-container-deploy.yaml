@@ -1,0 +1,41 @@
+#This is a sample yaml file for the KKE Devops task init-container-k8s
+#Edit the below lines as per your question.
+#Anything in ?? need to be replaced by the details from your questions.
+#Check this blog https://thirigiri.blogspot.com for kubenetes commands, how to deply this file and complete the task.
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: ??
+   labels:
+    app: ??
+spec:
+  replicas: ?
+  selector:
+   matchLabels:
+    app: ??
+  template:
+   metadata:
+    labels:
+      app: ?
+   spec:
+    containers:
+     - name: ??
+       image: ??
+       command: ["??", "??"]
+       args: ['??']
+       volumeMounts:
+        - mountPath: ??
+          name: ??
+    initContainers:
+    - name: ??
+      image: ??
+      command: ["??", '?']
+      args: ['??']
+      volumeMounts:
+      - name: ?
+        mountPath: ?
+    volumes:
+    - name: ?
+      emptyDir: {}
